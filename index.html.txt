@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Site</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .hero {
+            background: url('https://source.unsplash.com/1600x900/?travel,hotel') center/cover no-repeat;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        .service-card {
+            transition: transform 0.3s ease-in-out;
+        }
+        .service-card:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <h1>Book Your Perfect Stay</h1>
+        <p>Find the best hotels and services for your next trip.</p>
+        <a href="#booking" class="btn btn-primary btn-lg">Book Now</a>
+    </header>
+
+    <!-- Services Section -->
+    <section class="container my-5">
+        <h2 class="text-center mb-4">Our Services</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card service-card shadow">
+                    <img src="https://source.unsplash.com/400x300/?hotel" class="card-img-top" alt="Hotel">
+                    <div class="card-body">
+                        <h5 class="card-title">Luxury Hotels</h5>
+                        <p class="card-text">Stay in the most comfortable hotels with premium services.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card service-card shadow">
+                    <img src="https://source.unsplash.com/400x300/?restaurant" class="card-img-top" alt="Restaurant">
+                    <div class="card-body">
+                        <h5 class="card-title">Fine Dining</h5>
+                        <p class="card-text">Enjoy exquisite cuisine at the best restaurants.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card service-card shadow">
+                    <img src="https://source.unsplash.com/400x300/?beach,resort" class="card-img-top" alt="Resort">
+                    <div class="card-body">
+                        <h5 class="card-title">Resort & Spa</h5>
+                        <p class="card-text">Relax and rejuvenate at world-class resorts and spas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Form -->
+    <section id="booking" class="container my-5">
+        <h2 class="text-center mb-4">Make a Booking</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Full Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your full name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="date" class="form-label">Booking Date</label>
+                        <input type="date" class="form-control" id="date">
+                    </div>
+                    <div class="mb-3">
+                        <label for="service" class="form-label">Select Service<…
